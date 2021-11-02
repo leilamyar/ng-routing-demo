@@ -1,4 +1,4 @@
-<div *ngFor="let p of products">
+<div *ngFor="let p of products; trackBy:productById">
   <h3><a
     [title]="p.name + ' details'"
     [routerLink]="['/products', p.id]">{{ p.name }} Details</a></h3>
