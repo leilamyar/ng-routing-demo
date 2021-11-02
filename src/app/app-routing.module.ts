@@ -5,6 +5,8 @@ import { ChildBComponent } from './child-b/child-b.component';
 import { FirstComponent } from './first/first.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductsComponent } from './products/products.component';
 import { SecondComponent } from './second/second.component';
 
 const routes: Routes = [
@@ -24,6 +26,8 @@ const routes: Routes = [
     ],
   },
   { path: 'second-component', component: SecondComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'products/:productId', component: ProductDetailsComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `home-component`
   { path: '**', component: PageNotFoundComponentComponent },  // Wildcard route for a 404 page
 ];

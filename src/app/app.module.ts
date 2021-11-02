@@ -9,6 +9,8 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
 import { ChildAComponent } from './child-a/child-a.component';
 import { ChildBComponent } from './child-b/child-b.component';
 import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HomeComponent } from './home/home.component';
     ChildAComponent,
     ChildBComponent,
     HomeComponent,
+    ProductsComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
